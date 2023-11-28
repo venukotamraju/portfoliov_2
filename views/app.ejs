@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- <script defer src="app.js"></script> -->
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>This is working</h1> -->
+    <div class="body-container">
+        <div class="typing-container">
+            <span id="sentence" class="sentence">Here, take this</span>
+            <span id="feature-text"></span>
+            <span class="input-cursor"></span>
+        </div>
+    </div>
+    <section class="lAndT sA">
+        <h2>Languages and Technologies</h2>
+        <div class="logos">
+            <div class="logo sA lang" >
+                <img src="images/html.png" alt="icon-for-html" >
+            </div>
+            <div class="logo sA lang" >
+                <img src="images/css.png" alt="icon-for-css" >
+            </div>
+            <div class="logo sA lang" >
+                <img src="images/js.png" alt="icon-for-js" >
+            </div>
+            <div class="logo sA lang" >
+                <img src="images/node.png" alt="icon-for-nodeJs" >
+            </div>
+            <div class="logo sA lang" >
+                <img src="images/express.png" alt="icon-for-expressJS" >
+            </div>
+            <div class="logo sA lang" >
+                <img src="images/mongoDb.png" alt="icon-for-mongoDb" >
+            </div>
+            <div class="logo sA lang" >
+                <img src="images/python.png" alt="icon-for-python" >
+            </div>
+            <div class="logo sA lang">
+                <img src="images/goLang.png" alt="icon-for-goLang" >
+            </div>
+        </div>
+    </section>
+    <section class="projects sA">
+        <h2>Projects and Certificates</h2>
+        <div class="logos_certifcates">
+            <%- include('partials/certificates.ejs') %>
+        </div>
+        <div class="project_container">
+            <div class="project_logo">
+                <img src="images/kayatriLogo.png" alt="">
+            </div>
+            <p>A self-blogging website currently under development. Stay tuned for updates on the project or visit the github link for more details. You are highly encouraged to contribute. Lets enrich our skills together.</p>
+            <div class="project_logo">
+                <img src="images/android-chrome-512x512-is.png" alt="logo for infoshow">
+            </div>
+            <p>A website which displays information about required TV shows built by integrating TVMaze's API and with a purpose of being a project to test upon and develop upon by rather new beginners who are getting started in their web-development journey. The code is optimised for user friendliness and readability. This can be a good project for those who want to gain familiarity and brush up their knowledge for topics such as APIs, JS Objects and Events, AJAJ(Asynchronous JS and Json) and basic web-page structuring and designing using HTML/CSS and also little refinement over HTML Forms. If you are new to web-development you can fork the repo of this project from my <a href="https://github.com/venukotamraju/infoshow">Github</a> and start experimenting with it and redesign it based upon your needs. If you don't know what you want to do - here is an idea - you can integrate more APIs and make it a full blown Movie and TV Show information website - Just a thought but you can do much more &#9996.</p>
+            <p>Preview Website -> <a href="https://infoshow.netlify.app/">InfoShow</a></p>
+            <p>TVMaze API -><a href="https://www.tvmaze.com/api">TVMaze API</a></p>
+            <div class="project_logo">
+                <img src="images/android-chrome-512x512-portfolio.png" alt="logo for portfolio first version">
+            </div>
+            <p>Ofcourse I will include my first project. This portfolio website was developed in the intial days of my web-development journey. This page includes 98.7% of HTML/CSS which is entirely self-designed and a 1.3% of JavaScript which was taken from the internet to add a little animation. Honestly as a beginner and as a first project with no experience in web design, the output was appreciably unexpected. Aah! Was I proud. It was quite an experiment. So, if you are in need a portfolio website and want to understand the entire structure in say may be 10 min, even if you have just started your web dev journey and explain your interviewer how you built it :/ - just kidding...  well you can fork this repo from my <a href="https://github.com/venukotamraju/portfolio">github</a> and just edit the content inside the respective divs. And that's it you are done. It has everything what an inividual wants to be shown. Who knows whom you might even impress for creating a webpage using pure HTML/CSS especially in these times. Kudos  &#9996 </p>
+            <p>Preview the page here -> <a href="https://venukotamraju.netlify.app">Venu Kotamraju</a></p>
+        </div>
+    </section>
+    <section class="vision sA">
+        <h2>Vision</h2>
+        <div class="logos_container" id="logos_container">
+            <div class="logo_vision grid_item">
+                <img src="images/earth_divided.png" alt="image of divided earth">
+                <p>Allow me to explain...</p>
+                <p style="text-align: justify; padding-right: 15px;">This is how humans (we) currently are. The occurence of division not only by flags but getting divided by any reason we could get our hands on may it be color, religion, race, ethnicity and in some parts of the world even caste. This begs for the question to arise - How far and how long?. If there is a scope of divisions to occur and have it shown by flags at the front-end, what would stop the people of the world in dividing further and have the species break apart and leave it vulnerable for others to conquer.</p>
+            </div>
+            <div class="grid_item" id="grid_item_4">
+                <img src="images/earth.png" alt="image of united earth">
+                <p >The vision is as follows.</p>
+                <p style="text-align: justify; padding-left: 15px;">Earth to be united under one banner and color. The species residing the Earth and which have dominion over it - the species being the homo-sapiens to be one - to act one - to progess as one - to protect their home together - to acknowledge there is only one earth - one home to begin with...moving as though they are part of a singular being - having them secure their world - individually together by acting their role, doing their part, serving the needs, fulfilling their purpose under the guidance of the being of which they are all an embodiment of - the one chosen </p>
+            </div>
+        </div>
+            <p style="width: 90%;">The one chosen to bear the weight which cannot be beared - to guide those who are lost, providing them with a purpose, reminding them the debt they owe for residing on the planet - an entity chosen with a purpose to defend, secure and no other - who is void of the traits that spoiled the human race - doing his duty to advance the human race, get them to the stars and in doing so thus achieving peace...no war - no fight but rather absolute peace where all of them unite for a cause, for greater good and finally able to make humans achieve a sight of not seeing the enemy in themselves but rather acknowledge the enemy outside - out there dwelling in the distant stars waiting for contact - which will be established when we start to expand - which we will and have ourselves unite and prepare for that day.</p>
+            <div>
+                <p>I only ask of you to help make the vision to come true - to turn it into reality</p>
+                <p>I am ready to work for it - dedicate and devote my life - for it is the purpose of mine.</p>
+                <p>But are you ready to support - support yourself by supporting me - the person who can bring the change you've longed for - let's bring it together - I'm gonna be there, all you have to do is be with me - together</p>
+                <p>"To bring the change - Be the change"</p>
+            </div>
+    </section>
+    <section class="support sA">
+        <h2>Community and Support</h2>
+    </section>
+    <script src="js/app.js"></script>
+</body>
+</html>

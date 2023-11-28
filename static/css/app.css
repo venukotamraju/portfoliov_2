@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap');
+/* $black: #2b2b2b; */
+/* $size: 42px; */
+
+body {
+
+    background-color: #131316;
+    color: white;
+    font-size: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Darker Grotesque', sans-serif;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    overflow-x: hidden;
+    
+}
+.typing-container {
+    /* border: 1px solid red; */
+    background-color: #2b2b2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+#feature-text {
+    margin-left: 8px;
+}
+.input-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 42px;
+    background-color: white;
+    margin-left: 8px;
+    animation: blink 0.6s linear infinite alternate
+ }
+
+@keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+ }
+
+section{
+    /* border: 1px solid red; */
+    /* background-color: #131316; */
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+.sA{
+    opacity: 0;
+    transition: all 2s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+/* @media(prefers-reduced-motion: no-preference) {
+    .sA{
+        transition: all 1s;
+    }
+} */
+@media screen and (max-width:600px){
+    .logos{
+        /* display: flex; */
+        /* flex-direction: row; */
+        max-width: 100vw;
+        overflow: auto;
+    }
+    section{
+        overflow-x: hidden;
+    }
+    .content_child_5 ul{
+        /* display: flex; */
+        overflow: auto;
+        max-height: 50vh;
+    }
+}
+
+.logos{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 1rem 1rem;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-bottom: 1px solid white;
+}
+
+.logo{
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0 0.5rem;
+}
+img{
+    max-width: 200px;
+    max-height: 200px;
+}
+.logo:nth-child(1){
+    transition-delay: 200ms;
+}
+.logo:nth-child(2){
+    transition-delay: 400ms;
+}
+.logo:nth-child(3){
+    transition-delay: 600ms;
+}
+.logo:nth-child(4){
+    transition-delay: 800ms;
+}
+
+
+
+/* certificates */
+.content{
+    border-bottom: 1px solid white ;
+}
+.content_child_5 ul{
+    list-style: none;
+    list-style-type: none;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+.content_child_5 ul li{
+    display: inline-block;
+    position: relative;
+    margin: 5px;
+    /* text-align: center; */
+}
+.content_child_5 div{
+    position: relative;
+    height: 150px;
+    width: 300px;
+    border-radius: 15px;
+    border-bottom: 7px solid rgb(231, 13, 13);
+}
+.certificates div{
+    border: none;
+    box-sizing: border-box;
+    height: 40%;
+    width:100%;
+    position:absolute;
+    bottom: 0;
+    color: #f1f1f1;
+    font-family: sans-serif;
+}
+
+.certificates div a {
+    text-decoration: none;
+}
+.certificates div a button{
+    width: 50%;
+    height: 45%;
+    font-variant: small-caps;
+    background-color:rgba(5, 9, 255, 0.562);
+    color: white;
+    border-style: none;
+    font-family: sans-serif;
+    cursor: pointer;
+    margin: none;
+    padding: none;
+}
+.certificates div a button:hover{
+    background-color:rgb(59, 5, 255);
+    transition: ease-out 500ms;
+}
+#python_001{
+    /* background-repeat: none; */
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-image: url("/images/python_001.png");
+    /* border: none; */
+}
+#soft_eng{
+    /* background-repeat: none; */
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-image: url("/images/certificate_se.png");
+    /* border: none; */
+}
+#linux{
+    /* background-repeat: none; */
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-image: url("/images/certificate_linux.png");
+    /* border: none; */
+}
+#python_002{
+    /* background-repeat: none; */
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-image: url("/images/python_002.png");
+    /* border: none; */
+}
+#git{
+    /* background-repeat: none; */
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-image: url("/images/certficate_git.png");
+}
+
+/* Projects */
+
+.project_container{
+    max-width: 80vw;
+}
+.project_logo{
+    /* max-height: fit-content; */
+    text-align: center;
+    margin-top: 20vh;
+}
+div.project_logo:nth-child(1) img{
+    min-width: 400px;
+    min-height: 200px;
+    border-radius: 10px;
+}
+
+/* Vision */
+#logos_container{
+    /* position: inherit; */
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 90%;
+    padding: 10px;
+}
+
+    
+.grid_item:nth-child(1){
+    border-right: 1px solid white;
+}
+#grid_item_4{
+    text-align: right;
+    /* text-justify: newspaper; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
